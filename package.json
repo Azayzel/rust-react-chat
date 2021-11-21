@@ -1,0 +1,15 @@
+{
+    "name": "rust-react-chat",
+    "version": "1.0.0",
+    "description": "A Rust Chat server with React front end",
+    "main": "index.js",
+    "author": "Josh Lavely <josh@lavely.io>",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^6.4.0"
+    },
+    "scripts": {
+        "install": "concurrently \"cargo build\" \"cd frontend && yarn\"",
+        "dev": "concurrently \"RUST_LOG=ingo cargo run\" \"cd frontend && yarn start\""
+    }
+}
